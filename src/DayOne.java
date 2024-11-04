@@ -9,15 +9,13 @@ public class DayOne {
 
          */
 
-        int a = 2;
+        int a = 1;
         int b = 2;
         if (b > a) {
             System.out.println("b is bigger than a");
-        }
-            else if (b < a) {
+        } else if (b < a) {
             System.out.println("b is smaller than a");
-        }
-            else {
+        } else {
             System.out.println("b is equal to a");
         }
     }
