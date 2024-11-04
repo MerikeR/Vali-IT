@@ -20,6 +20,7 @@ public class DayOne {
 
 
         int a = -2;
+        int c = 5;
         int b = 3;
         if (b > a && a > 0) {
             System.out.println("b is bigger than a, and a is positive");
@@ -30,6 +31,7 @@ public class DayOne {
         } else {
             System.out.println("No specific conditions were met");
         }
-
+        String g = "Merike";
+        System.out.println(g.length());
     }
 }
