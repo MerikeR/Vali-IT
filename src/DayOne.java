@@ -31,7 +31,8 @@ public class DayOne {
         } else {
             System.out.println("No specific conditions were met");
         }
-        String g = "Merike";
-        System.out.println(g.length());
+
+        String usedVariable = "HelloWorld";
+        System.out.println(usedVariable.length());
     }
 }
