@@ -16,8 +16,8 @@ public class DayOne {
             System.out.println("b is smaller than a");
         } else {
             System.out.println("b is equal to a");
-        }
-         */
+        }*/
+
 
         int a = -2;
         int b = 3;
@@ -30,5 +30,6 @@ public class DayOne {
         } else {
             System.out.println("No specific conditions were met");
         }
+
     }
 }
