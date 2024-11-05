@@ -28,17 +28,17 @@ public class DayTwo {
 
         // 4. Greatest Number
         System.out.print("Enter first number: ");
-        int d = scanner.nextInt();
+        int firstNumber = scanner.nextInt();
         System.out.print("Enter second number: ");
-        int e = scanner.nextInt();
+        int secondNumber = scanner.nextInt();
         System.out.print("Enter third number: ");
-        int f = scanner.nextInt();
-        if (d>e && d>f) {
-            System.out.println("Greatest number is " + d);
-        } else if (e>d && e>f) {
-            System.out.println("Greatest number is " + e);
+        int thirdNumber = scanner.nextInt();
+        if (firstNumber>=secondNumber && firstNumber>=thirdNumber) {
+            System.out.println("Greatest number is " + firstNumber);
+        } else if (secondNumber>=firstNumber && secondNumber>=thirdNumber) {
+            System.out.println("Greatest number is " + secondNumber);
         } else {
-            System.out.println("Greatest number is " + f);
+            System.out.println("Greatest number is " + thirdNumber);
         }
     }
 }
