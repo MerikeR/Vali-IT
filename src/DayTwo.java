@@ -40,6 +40,5 @@ public class DayTwo {
         } else {
             System.out.println("Greatest number is " + f);
         }
-
     }
 }
