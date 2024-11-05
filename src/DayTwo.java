@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class DayTwo {
     public static void main(String[] args) {
 
+        /*
         // 1. Hello World
         System.out.println("Hello World!");
 
-         /*
+
         // 2. Simple Calculator
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number: ");
