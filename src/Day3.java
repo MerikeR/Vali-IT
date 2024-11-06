@@ -1,72 +1,67 @@
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Day3 {
-
-
     /*
-        public static void main(String[] args) {
-        getUser();
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 5;
+        getArea(a, b);
     }
-    private static void getUser() {
-        boolean isTrue = true;
-        System.out.println("Hello");
-        if(isTrue) {
-            getName();
-        }
+    private static void getArea(int a, int b) {
+        int pindala = a * b;
+        checkArea(pindala);
     }
-    private static void getName() {
-        boolean isFalse = false;
-        boolean isTrue = true;
-        int number = 5;
-        System.out.println("John");
-        if(isFalse) {
-            getPassword();
+    private static void checkArea(int pindala) {
+        if (pindala > 20) {
+            System.out.println("Area is bigger than 20");
+        } else if (pindala < 20) {
+            System.out.println("Area is smaller than 20");
         } else {
-            System.out.println("Is false!");
-            getPassword(number);
+            System.out.println("Area is equal to 20");
         }
     }
-    private static void getPassword() {
-        System.out.println("Password");
+
+    public static void main(String[] args){
+        boolean checkIfNumberIsEven = isEven(4);
+        System.out.println(checkIfNumberIsEven);
     }
-    private static void getPassword(int number) {
-        System.out.println("...");
+    public static boolean isEven (int number){
+        return number % 2 == 0;
+    }
+    public static void main(String[] args){
+        boolean checkIfNumberIsEven = isEven(4);
+        System.out.println(checkIfNumberIsEven);
+    }
+    public static boolean isEven (int number){
+        return number % 2 == 0;
     }
 
-
-
-    // Lisame meetodi, mis prindib ekraanile Hello
-    public static void main(String[] args) {
-        getHello();
+    public static void main(String[] args){
+        int id = 1;
+        getUser(id);
     }
-    private static void getHello(){
-        System.out.println("Hello");
+    private static void getUser(int id){
+        getUserFullName();
+        getUserAge();
     }
-
-
-    public static void main(String[] args) {
-        getName();
+    private static String getUserFullName() {
+        String userFullName = "John Doe";
+        return userFullName;
     }
-    private static void getName() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your name: ");
-        String name = sc.nextLine();
-        System.out.println("Your name is " + name);
-        getAge();
-    }
-    public static int getAge() {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter your age: ");
-        int age = input.nextInt();
+    private static int getUserAge(){
+        int age = 30;
         return age;
     }
-    private static void CheckUserAge(int age) {
-        if(age<18) {
-            System.out.println("You are younger than 18 years old!");
-        } else System.out.println("Your age is " + age);
+    */
+
+    public static void main(String[] args) {
+        int[] m = new int[10];
+        System.out.println(Arrays.toString(m));
+        int[] m2 = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(m2));
+        String [] randomWords = {"Java", "Tesla", "Hello"};
+        Arrays.sort(randomWords);
+        System.out.println(Arrays.toString(randomWords));
+        System.out.println(randomWords[1] + ", " + randomWords[2]);
     }
-
-     */
-
 }
-
