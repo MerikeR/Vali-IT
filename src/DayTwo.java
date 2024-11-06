@@ -44,11 +44,11 @@ public class DayTwo {
 
         // E1. Text toUpper, E2. Text toLower
 
-        String txtLower = "hello world";
-        System.out.println(txtLower.toUpperCase());
+        String txtToUpper = "hello world";
+        System.out.println("Uppercased " + txtToUpper.toUpperCase());
 
-        String txtUpper = "HELLO WORLD";
-        System.out.println(txtUpper.toLowerCase());
+        String txtToLower = "HELLO WORLD";
+        System.out.println(txtToLower.toLowerCase());
 
         // E3. Check if String contains a Substring
         String txtContain = "Hello, world!";
