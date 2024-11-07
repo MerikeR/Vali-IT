@@ -56,6 +56,8 @@ public class Day3 {
 
     public static void main(String[] args) {
         int[] m = new int[10];
+        int length = m.length;
+        System.out.println(length);
         System.out.println(Arrays.toString(m));
         int[] m2 = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(m2));
