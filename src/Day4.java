@@ -60,7 +60,7 @@ public class Day4 {
         int k = 1;
         i = +2; // i = 2, + ei mõjuta kuidagi
         k += 2; // k = k+2
-    }*/
+    }
         public static void main(String[] args) {
         PrintNumbers();
         PrintCarBrands();
@@ -109,6 +109,71 @@ public class Day4 {
             System.out.println("Multiple Table: ");
         for (int b = 1; b <= 10; b++) {
             System.out.println(a + " x " + b + " = " + (a * b));
+        }
+    }
+    public static void main(String[] args) {
+
+        for (int count = 1; count <= 5; count++) {
+            if (count == 3) {
+                break;
+            }
+                System.out.println("Count is: " + count);
+        }
+
+        for (int count = 1; count <= 5; count++) {
+            if (count == 3) {
+                continue;
+            }
+            System.out.println("Count is: " + count);
+        }
+        int diceRoll = rollDice();
+        System.out.println("You rolled a number: " + diceRoll);
+    }
+    private static int rollDice() {
+        return (int) (Math.random() * 6) + 1;
+    }
+
+     */
+    public static void main(String[] args) {
+
+        FirstEvenNumber();
+    }
+
+    private static void FirstEvenNumber() {
+        // E1.
+        int [] numbers = {1, 3, 7, 4, 9, 10};
+        for (int a = 2; a <= numbers.length; a = numbers[1]) {
+
+            if (a % 2 == 0) {
+            break;
+            }
+            System.out.println("First even number is : " + a);
+        }
+
+        OddNumbers();
+    }
+
+    private static void OddNumbers() {
+        // E2.
+        for (int b = 1; b <= 20; b +=2) {
+
+            if (b % 5 == 0) {
+                continue;
+            }
+            System.out.println(b);
+        }
+
+        MultipliesOf3();
+    }
+
+    private static void MultipliesOf3() {
+        // E3.
+        for (int c = 3; c <= 30; c +=3) {
+
+            if (c % 6 == 0) {
+                continue;
+            }
+            System.out.println(c);
         }
     }
 }
