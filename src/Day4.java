@@ -139,6 +139,8 @@ public class Day4 {
         firstEvenNumber();
         oddNumbersSkipMultipliesOfFive();
         multipliesOfThreeSkipMultipliesOfSix();
+        sumUntilNegativeFound();
+        firstNumberGreaterThanFifty();
     }
 
     private static void firstEvenNumber() {
@@ -175,6 +177,31 @@ public class Day4 {
                 continue;
             }
             System.out.println(c);
+        }
+    }
+    private static void sumUntilNegativeFound() {
+
+        // E4
+
+        int[] myArray = {5, 12, 3, 7, -4, 8, 2};
+        int sum = 0;
+        for (int d : myArray) {
+           if (d < 0) {
+               break;
+           }
+           sum += d;
+        }
+        System.out.println("Sum of non-negative numbers is: " + sum);
+    }
+    private static void firstNumberGreaterThanFifty() {
+
+        // E5.
+        int[] numbers = {23, 45, 39, 51, 48, 60};
+        for (int f : numbers) {
+            if (f > 50) {
+                System.out.println("First number greater than 50 is: " + f);
+                break;
+            }
         }
     }
 }
