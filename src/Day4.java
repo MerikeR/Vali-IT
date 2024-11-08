@@ -81,7 +81,7 @@ public class Day4 {
         private static void PrintCarBrands() {
         String[] carBrands = {"Ford", "Honda", "Audi"};
         for (String carBrand : carBrands) {
-            System.out.println("Car brand: " + carBrand);
+            System.out.println("Day5.objectCreation.Car brand: " + carBrand);
             }
         }
 
