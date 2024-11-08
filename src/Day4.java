@@ -136,24 +136,26 @@ public class Day4 {
      */
     public static void main(String[] args) {
 
-        FirstEvenNumber();
+        firstEvenNumber();
+        oddNumbersSkipMultipliesOfFive();
+        multipliesOfThreeSkipMultipliesOfSix();
     }
 
-    private static void FirstEvenNumber() {
+    private static void firstEvenNumber() {
+
         // E1.
         int [] numbers = {1, 3, 7, 4, 9, 10};
-        for (int a = 2; a <= numbers.length; a = numbers[1]) {
 
+        for (int a : numbers) {
             if (a % 2 == 0) {
-            break;
+                System.out.println("First even number is: " + a);
+                break;
             }
-            System.out.println("First even number is : " + a);
         }
-
-        OddNumbers();
     }
 
-    private static void OddNumbers() {
+    private static void oddNumbersSkipMultipliesOfFive() {
+
         // E2.
         for (int b = 1; b <= 20; b +=2) {
 
@@ -162,11 +164,10 @@ public class Day4 {
             }
             System.out.println(b);
         }
-
-        MultipliesOf3();
     }
 
-    private static void MultipliesOf3() {
+    private static void multipliesOfThreeSkipMultipliesOfSix() {
+
         // E3.
         for (int c = 3; c <= 30; c +=3) {
 
