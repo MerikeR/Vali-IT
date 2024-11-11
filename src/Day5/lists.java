@@ -1,7 +1,6 @@
 package Day5;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class lists {
     /*
@@ -43,8 +42,12 @@ public class lists {
             System.out.println("Element at index " + i + ": " + numbers.get(i));
         }
     }
+        public static void main(String[] args) {
+        String text = " T ";
 
-     */
+        System.out.println(text.isBlank());
+    }
+
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
 
@@ -52,7 +55,7 @@ public class lists {
             numbers.add(i);
         }
 
-        for (int i = numbers.size(); i >= 0; i--) {
+        for (int i = numbers.size()-1; i >= 0; i--) {
             if (numbers.get(i) % 2 == 0) {
                 numbers.remove(i);
             }
@@ -60,4 +63,13 @@ public class lists {
 
         System.out.println("List after removing even numbers: " + numbers);
     }
+
+     */
 }
+
+
+
+
+
+
+
