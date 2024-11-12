@@ -11,11 +11,10 @@ public class Day7 {
     public static void main(String[] args) {
         int num1 = 10;
         int num2 = 20;
-        int result = (num1<=num2) ? num2 : num1;
-        System.out.println("The maximum number is " + result);
+        int max = (num1<=num2) ? num2 : num1;
+        System.out.println("The maximum number is " + max);
     }
-     */
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your age: ");
         int personsAge = scanner.nextInt();
@@ -23,4 +22,5 @@ public class Day7 {
         String result = (personsAge >= expectedAge) ? "Eligible to vote" : "Not eligible to vote";
         System.out.println(result);
     }
+     */
 }
